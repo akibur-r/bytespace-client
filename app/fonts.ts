@@ -18,19 +18,21 @@ export const satoshi = localFont({
   variable: "--font-sans",
 });
 
+export const clashDisplay = localFont({
+  src: [
+    {
+      path: "./fonts/ClashDisplay-variable.woff2",
+      weight: "200 700",
+      style: "normal",
+    },
+  ],
+  display: "swap",
+  variable: "--font-clash-display",
+});
+
 export const poppins = Poppins({
   subsets: ["latin"],
-  weight: [
-    "100",
-    "200",
-    "300",
-    "400",
-    "500",
-    "600",
-    "700",
-    "800",
-    "900",
-  ],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   style: ["normal", "italic"],
   preload: false,
   variable: "--font-poppins",
