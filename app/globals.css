@@ -160,6 +160,90 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+@utility heading-l {
+  font-family: var(--font-poppins);
+  font-size: 72px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+@utility heading-m {
+  font-family: var(--font-poppins);
+  font-size: 44px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+@utility heading-s {
+  font-family: var(--font-poppins);
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+@utility heading-xs {
+  font-family: var(--font-poppins);
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+@utility body-l {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+@utility body-m {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+@utility body-s {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+@utility body-xs {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+@utility label-l {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+@utility label-m {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+@utility label-s {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+@utility label-xs {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
