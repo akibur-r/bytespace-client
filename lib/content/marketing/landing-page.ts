@@ -1,4 +1,16 @@
+import type { StaticImageData } from "next/image";
+
 import heroPerson from "@/components/marketing/hero-person.png";
+import partner1 from "@/components/marketing/partner-1.png";
+import partner2 from "@/components/marketing/partner-2.png";
+import partner3 from "@/components/marketing/partner-3.png";
+import partner4 from "@/components/marketing/partner-4.png";
+import partner5 from "@/components/marketing/partner-5.png";
+
+type PartnerLogo = {
+  src: StaticImageData;
+  alt: string;
+};
 
 export const landingPage = {
   hero: {
@@ -33,4 +45,11 @@ export const landingPage = {
       },
     },
   },
+  partners: [
+    { src: partner1, alt: "" },
+    { src: partner2, alt: "" },
+    { src: partner3, alt: "" },
+    { src: partner4, alt: "" },
+    { src: partner5, alt: "" },
+  ] satisfies PartnerLogo[],
 };

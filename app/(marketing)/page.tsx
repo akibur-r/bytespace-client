@@ -1,10 +1,13 @@
 import { Masthead, SiteHeader } from "@/components/layout";
-import { Hero } from "@/components/marketing";
+import { Hero, Partners } from "@/components/marketing";
 
 export default function Home() {
   return (
-    <Masthead header={<SiteHeader variant="overlay" />}>
-      <Hero />
-    </Masthead>
+    <>
+      <Masthead header={<SiteHeader variant="overlay" />}>
+        <Hero />
+      </Masthead>
+      <Partners />
+    </>
   );
 }
