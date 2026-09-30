@@ -8,6 +8,7 @@ import cylinderLime from "@/components/shared/shapes/cylinder-1-lime.svg";
 import coneWhite from "@/components/shared/shapes/cone-1-white.svg";
 import donutWhite from "@/components/shared/shapes/donut-1-white.svg";
 import ellipseLime from "@/components/shared/shapes/ellipse-1-lime.svg";
+import heroPerson from "@/components/marketing/hero-person.png";
 
 export function Hero() {
   return (
@@ -15,11 +16,11 @@ export function Hero() {
       <Image
         src={ellipseLime}
         alt=""
-        width={1160}
-        height={1160}
+        width={1149}
+        height={1149}
         unoptimized
         aria-hidden
-        className="absolute bottom-0 left-1/2 h-290 aspect-square -translate-x-1/2 translate-y-32/50"
+        className="absolute bottom-0 left-1/2 h-290 aspect-square -translate-x-1/2 translate-y-60/100"
       />
 
       <Image
@@ -68,7 +69,7 @@ export function Hero() {
         height={387}
         unoptimized
         aria-hidden
-        className="pointer-events-none absolute left-8 top-170 w-86"
+        className="pointer-events-none absolute left-2 top-170 w-86"
       />
 
       <Image
@@ -78,7 +79,14 @@ export function Hero() {
         height={387}
         unoptimized
         aria-hidden
-        className="pointer-events-none absolute -right-6 top-170 w-86"
+        className="pointer-events-none absolute -right-10 rotate-5 top-170 w-86"
+      />
+
+      <Image
+        src={heroPerson}
+        alt=""
+        aria-hidden
+        className="pointer-events-none absolute bottom-0 left-1/2 h-136 w-auto -translate-x-44/100"
       />
 
       <section className="h-300">test</section>
