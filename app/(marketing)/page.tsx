@@ -1,5 +1,5 @@
 import { Masthead, SiteHeader } from "@/components/layout";
-import { Hero, Partners } from "@/components/marketing";
+import { Courses, Hero, Partners } from "@/components/marketing";
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
         <Hero />
       </Masthead>
       <Partners />
+      <Courses />
     </>
   );
 }
