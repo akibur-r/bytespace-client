@@ -1,5 +1,6 @@
 import { Container } from "@/components/layout";
 import { CourseFilters } from "@/components/marketing/course-filters";
+import { CourseGrid } from "@/components/marketing/course-grid";
 import { landingPage } from "@/lib/content/marketing/landing-page";
 
 export function Courses() {
@@ -7,14 +8,14 @@ export function Courses() {
 
   return (
     <section className="py-16">
-      <Container className="flex flex-col items-center gap-4 text-center">
-        <h2 className="heading-m text-[#040819] whitespace-pre-line">
-          {heading}
-        </h2>
-        <p className="body-l max-w-4xl text-gray-400">{subheading}</p>
-        <div className="py-10">
+      <Container>
+        <header className="flex flex-col items-center gap-8 text-center">
+          <h2 className="heading-m text-[#040819]">{heading}</h2>
+          <p className="body-l max-w-3xl text-gray-400">{subheading}</p>
           <CourseFilters />
-        </div>
+        </header>
+
+        <CourseGrid className="mt-8" />
       </Container>
     </section>
   );
