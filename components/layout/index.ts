@@ -1,4 +1,6 @@
 export { Container } from "./container"
+export { Masthead } from "./masthead"
+export { HeaderLink, NavLink } from "./nav-link"
 export { PublicShell } from "./public-shell"
 export { SiteFooter } from "./site-footer"
 export { SiteHeader } from "./site-header"
