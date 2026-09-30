@@ -1,62 +1,69 @@
-"use client";
-
 import Link from "next/link";
-import { useSelectedLayoutSegment } from "next/navigation";
 
 import { Container } from "@/components/layout/container";
-import { Logo } from "@/components/shared";
+import { HeaderLink, NavLink } from "@/components/layout/nav-link";
+import { CartIcon, Logo } from "@/components/shared";
 import {
   NavigationMenu,
   NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
 import { headerActions, headerNav } from "@/lib/content/navigation";
+import { cn } from "@/lib/utils";
 
-export function SiteHeader() {
-  const segment = useSelectedLayoutSegment();
+export function SiteHeader({
+  variant = "solid",
+  className,
+}: {
+  variant?: "solid" | "overlay";
+  className?: string;
+}) {
+  const isOverlay = variant === "overlay";
+  const navColor = isOverlay
+    ? "text-gray-50 hover:text-gray-50 focus:text-gray-50"
+    : undefined;
 
   return (
-    <header className="w-full py-6">
+    <header
+      className={cn(
+        "w-full py-8 md:py-12",
+        isOverlay ? "text-white" : "sticky top-0 z-40 bg-background",
+        className,
+      )}
+    >
       <Container className="flex items-center justify-between gap-6">
         <Link href="/">
-          <Logo variant="full" size="xl" />
+          <Logo
+            variant="full"
+            size="xl"
+            className={isOverlay ? "text-white" : undefined}
+          />
         </Link>
 
-        <NavigationMenu className="hidden md:flex text-md">
+        <NavigationMenu className="hidden md:flex font-sans">
           <NavigationMenuList className="gap-6">
-            {headerNav.map((item) => {
-              const itemSegment = item.href.split("/")[1] ?? null;
-              const isActive = segment === itemSegment;
-
-              return (
-                <NavigationMenuItem key={item.href}>
-                  <NavigationMenuLink
-                    render={<Link href={item.href} />}
-                    active={isActive}
-                    className="text-sm font-medium text-muted-foreground transition-transform hover:text-foreground data-active:-translate-y-6"
-                  >
-                    {item.label}
-                  </NavigationMenuLink>
-                </NavigationMenuItem>
-              );
-            })}
+            {headerNav.map((item) => (
+              <NavigationMenuItem key={item.href}>
+                <NavLink href={item.href} className={navColor}>
+                  {item.label}
+                </NavLink>
+              </NavigationMenuItem>
+            ))}
           </NavigationMenuList>
         </NavigationMenu>
 
-        <div className="flex items-center gap-6 ">
-          <Link href={headerActions.signIn.href}>
-              {headerActions.signIn.label}
-            </Link>
+        <div className="flex items-center gap-6">
+          <HeaderLink href={headerActions.signIn.href} className={navColor}>
+            {headerActions.signIn.label}
+          </HeaderLink>
 
-          <Link href={headerActions.signUp.href}>
-              {headerActions.signUp.label}
-            </Link>
+          <HeaderLink href={headerActions.signUp.href} className={navColor}>
+            {headerActions.signUp.label}
+          </HeaderLink>
 
-          
-            <Link href={headerActions.cart.href} aria-label="Cart">
-              <headerActions.cart.icon className="size-4" />
-            </Link>
+          <Link href={headerActions.cart.href} aria-label="Cart">
+            <CartIcon />
+          </Link>
         </div>
       </Container>
     </header>

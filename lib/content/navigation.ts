@@ -1,5 +1,3 @@
-import { ShoppingBag, type LucideIcon } from "lucide-react";
-
 type NavLink = {
   label: string;
   href: string;
@@ -8,7 +6,6 @@ type NavLink = {
 type HeaderAction = {
   label?: string;
   href: string;
-  icon?: LucideIcon;
 };
 
 export const headerNav = [
@@ -28,6 +25,5 @@ export const headerActions = {
   },
   cart: {
     href: "/cart",
-    icon: ShoppingBag,
   },
 } satisfies Record<string, HeaderAction>;

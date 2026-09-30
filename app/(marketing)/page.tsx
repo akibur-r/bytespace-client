@@ -1,5 +1,10 @@
-import { Container } from "@/components/layout";
+import { Masthead, SiteHeader } from "@/components/layout";
+import { Hero } from "@/components/marketing";
 
 export default function Home() {
-  return <Container>homepage</Container>;
+  return (
+    <Masthead header={<SiteHeader variant="overlay" />}>
+      <Hero />
+    </Masthead>
+  );
 }
