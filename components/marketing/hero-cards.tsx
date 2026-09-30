@@ -53,9 +53,8 @@ export function HeroCards() {
         </CardHeader>
         <CardContent className="flex flex-col gap-3">
           <CardDescription className="body-xs flex items-center gap-1">
+            {`${cards.students.rating} (${cards.students.reviews})`}
             <Star className="size-3.5 fill-lime-400 text-lime-400" />
-            {cards.students.rating}
-            {cards.students.reviews}
           </CardDescription>
 
           <AvatarGroup className="-space-x-4 *:data-[slot=avatar]:ring-0">

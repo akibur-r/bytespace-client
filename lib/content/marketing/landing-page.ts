@@ -18,8 +18,8 @@ export const landingPage = {
       },
       students: {
         title: "Happy Students",
-        rating: "4.5",
-        reviews: "(240)",
+        rating: 4.5,
+        reviews: 240,
         count: "2K+",
         avatars: [
           { src: heroPerson.src },
