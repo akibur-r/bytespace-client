@@ -1,2 +1,6 @@
 export { CartIcon } from "./cart-icon"
 export { Logo } from "./logo"
+export { RadialGlow } from "./radial-glow"
+export { SocialProofCard } from "./social-proof-card"
+export { Stat } from "./stat"
+export { TestimonialCard } from "./testimonial-card"
