@@ -1,5 +1,6 @@
 import { Star } from "lucide-react";
 
+import { ProgressCard } from "@/components/marketing/progress-card";
 import {
   Avatar,
   AvatarGroup,
@@ -13,7 +14,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Progress } from "@/components/ui/progress";
 import { landingPage } from "@/lib/content/marketing/landing-page";
 
 export function HeroCards() {
@@ -32,20 +32,11 @@ export function HeroCards() {
         </CardContent>
       </Card>
 
-      <Card className="absolute bottom-60 right-50 -translate-x-1/2 gap-2 rounded-2xl ring-0 border-0 bg-white">
-        <CardHeader>
-          <CardTitle className="label-s">{cards.progress.title}</CardTitle>
-        </CardHeader>
-        <CardContent className="flex flex-col">
-          <span className="font-heading text-5xl leading-[1.2em] font-semibold text-gray-950">
-            {cards.progress.value}%
-          </span>
-          <Progress
-            value={cards.progress.value}
-            className="min-w-50 **:data-[slot=progress-track]:h-2 **:data-[slot=progress-indicator]:rounded-full"
-          />
-        </CardContent>
-      </Card>
+      <ProgressCard
+        className="absolute bottom-60 right-50 -translate-x-1/2"
+        title={cards.progress.title}
+        value={cards.progress.value}
+      />
 
       <Card className="absolute bottom-16 left-80 gap-2 rounded-2xl ring-0 border-0 bg-white">
         <CardHeader>
