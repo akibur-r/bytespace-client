@@ -83,4 +83,9 @@ export const landingPage = {
     ] satisfies CourseCategory[],
     moreLabel: "+More",
   },
+  courseCategories: {
+    heading: "Explore Diverse Learning Paths at Bytespace",
+    subheading:
+      "At Bytespace, we believe in empowering individuals through knowledge. Our diverse range of courses spans various fields, ensuring there's something for everyone. Unleash your potential and explore our carefully curated categories.",
+  },
 };
