@@ -1,5 +1,6 @@
 export { CourseCategories } from "./course-categories"
 export { Courses } from "./courses"
+export { CreatorCta } from "./creator-cta"
 export { Hero } from "./hero"
 export { Partners } from "./partners"
 export { Stats } from "./stats"
