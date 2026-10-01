@@ -88,4 +88,14 @@ export const landingPage = {
     subheading:
       "At Bytespace, we believe in empowering individuals through knowledge. Our diverse range of courses spans various fields, ensuring there's something for everyone. Unleash your potential and explore our carefully curated categories.",
   },
+  stats: {
+    title: "Your Path to Professional Growth Starts Here!",
+    description:
+      "Explore our curated selection of courses tailored to enhance your capabilities and accelerate your career journey. Whether you are looking to sharpen specific skills, gain industry expertise, or embark on a new career path entirely, we have the resources you need.",
+    items: [
+      { value: "12k", label: "Students" },
+      { value: "70+", label: "Courses" },
+      { value: "16", label: "Creators" },
+    ],
+  },
 };

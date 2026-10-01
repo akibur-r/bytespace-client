@@ -4,6 +4,7 @@ import {
   Courses,
   Hero,
   Partners,
+  Stats,
 } from "@/components/marketing";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <Partners />
       <Courses />
       <CourseCategories />
+      <Stats />
     </>
   );
 }
