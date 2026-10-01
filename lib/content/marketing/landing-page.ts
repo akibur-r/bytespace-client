@@ -1,12 +1,14 @@
 import type { StaticImageData } from "next/image";
 
-import heroPerson from "@/components/marketing/hero-person.png";
 import partner1 from "@/components/marketing/partner-1.png";
 import partner2 from "@/components/marketing/partner-2.png";
 import partner3 from "@/components/marketing/partner-3.png";
 import partner4 from "@/components/marketing/partner-4.png";
 import partner5 from "@/components/marketing/partner-5.png";
-import testimonialAvatar from "@/components/shared/testimonial-avatar.png";
+import testimonialAvatar1 from "@/components/shared/testimonial-avatar-1.png";
+import testimonialAvatar2 from "@/components/shared/testimonial-avatar-2.png";
+import testimonialAvatar3 from "@/components/shared/testimonial-avatar-3.png";
+import { studentAvatars } from "@/lib/content/shared";
 
 type PartnerLogo = {
   src: StaticImageData;
@@ -24,8 +26,6 @@ export type Testimonial = {
   message: string;
   avatar: StaticImageData;
 };
-
-const studentAvatars = Array.from({ length: 7 }, () => heroPerson.src);
 
 export const landingPage = {
   hero: {
@@ -100,21 +100,21 @@ export const landingPage = {
         designation: "Enthusiastic Learner",
         message:
           '"ByteSpace has transformed my approach to learning. The diverse range of courses and the quality of content provided by creators have exceeded my expectations. The platform truly fosters a sense of community and lifelong learning."',
-        avatar: testimonialAvatar,
+        avatar: testimonialAvatar1,
       },
       {
         name: "James L.",
         designation: "Lifelong Learner",
         message:
           '"I\'ve tried several online learning platforms, and ByteSpace stands out for its vibrant community and the variety of courses available. The easy navigation and engaging content make it a go-to platform for continuous skill development."',
-        avatar: testimonialAvatar,
+        avatar: testimonialAvatar2,
       },
       {
         name: "Alex B.",
         designation: "Inspired Creator",
         message:
           '"As a creator, ByteSpace has been a game-changer for me. The Course Editor is user-friendly, and the support from the community is incredible. It\'s fulfilling to see my courses making a positive impact on learners globally."',
-        avatar: testimonialAvatar,
+        avatar: testimonialAvatar3,
       },
     ] satisfies Testimonial[],
   },
