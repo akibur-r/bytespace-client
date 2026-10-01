@@ -28,6 +28,20 @@ export const auth = {
     heading: "Sign in with ease",
     subheading:
       "Experience a seamless and efficient sign-in process that grants you instant access to a world of knowledge.",
+    form: {
+      subheading: "Sign In",
+      title: "Welcome Back",
+      actionLabel: "Sign In",
+      fields: {
+        email: { label: "Email", placeholder: "designer@example.com" },
+        password: { label: "Password", placeholder: "********" },
+      },
+      prompt: {
+        text: "New user?",
+        linkLabel: "Create an account",
+        linkHref: "/sign-up",
+      },
+    },
   },
   showcase: {
     cards: [courses[0], courses[1]] satisfies Course[],

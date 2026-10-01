@@ -1,4 +1,4 @@
-import { AuthShell } from "@/components/auth";
+import { AuthShell, SignInForm } from "@/components/auth";
 import { auth } from "@/lib/content/auth";
 
 export default function SignInPage() {
@@ -6,6 +6,7 @@ export default function SignInPage() {
     <AuthShell
       heading={auth.signIn.heading}
       subheading={auth.signIn.subheading}
+      form={<SignInForm />}
     />
   );
 }
