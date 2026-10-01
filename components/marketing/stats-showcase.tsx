@@ -13,7 +13,7 @@ export function StatsShowcase({ className }: { className?: string }) {
   const course = courses[0];
 
   return (
-    <div className={cn("relative min-h-140", className)}>
+    <div className={cn("relative min-h-120", className)}>
       <CourseCard
         className="absolute top-0 left-0"
         course={course}
@@ -23,11 +23,11 @@ export function StatsShowcase({ className }: { className?: string }) {
         src={heroPerson}
         alt=""
         aria-hidden
-        className="absolute bottom-0 left-1/2 min-h-140 object-cover -translate-x-2/5"
+        className="absolute bottom-0 left-1/2 min-h-120 object-cover -translate-x-2/5"
       />
 
       <ProgressCard
-        className="absolute top-1/2 -right-2 -translate-y-1/2"
+        className="absolute top-52/100 -right-2 -translate-y-1/2"
         title={progress.title}
         value={progress.value}
       />
@@ -36,7 +36,7 @@ export function StatsShowcase({ className }: { className?: string }) {
         src={spiralLime}
         alt=""
         aria-hidden
-        className="pointer-events-none absolute top-2/6 right-0 w-40 -translate-y-1/2 rotate-120"
+        className="pointer-events-none absolute top-30/100 right-0 w-40 -translate-y-1/2 rotate-120"
       />
     </div>
   );

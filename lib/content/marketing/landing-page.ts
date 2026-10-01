@@ -17,6 +17,8 @@ type CourseCategory = {
   slug: string;
 };
 
+const creatorStudentAvatars = Array.from({ length: 7 }, () => heroPerson.src);
+
 export const landingPage = {
   hero: {
     headline: "Get Access to Hundreds\nCourses Available",
@@ -89,13 +91,49 @@ export const landingPage = {
       "At Bytespace, we believe in empowering individuals through knowledge. Our diverse range of courses spans various fields, ensuring there's something for everyone. Unleash your potential and explore our carefully curated categories.",
   },
   stats: {
-    title: "Your Path to Professional Growth Starts Here!",
-    description:
-      "Explore our curated selection of courses tailored to enhance your capabilities and accelerate your career journey. Whether you are looking to sharpen specific skills, gain industry expertise, or embark on a new career path entirely, we have the resources you need.",
-    items: [
-      { value: "12k", label: "Students" },
-      { value: "70+", label: "Courses" },
-      { value: "16", label: "Creators" },
-    ],
+    growth: {
+      title: "Your Path to Professional Growth Starts Here!",
+      description:
+        "Explore our curated selection of courses tailored to enhance your capabilities and accelerate your career journey. Whether you are looking to sharpen specific skills, gain industry expertise, or embark on a new career path entirely, we have the resources you need.",
+      items: [
+        { value: "12k", label: "Students" },
+        { value: "70+", label: "Courses" },
+        { value: "16", label: "Creators" },
+      ],
+    },
+    creator: {
+      title: "Create & Manage Courses Easily.",
+      brand: "Bytespace",
+      description:
+        "supports individuals or entities in the creation, publication, and administration of educational courses.",
+      features: [
+        "Share Your Expertise",
+        "Monetize Your Passion",
+        "Flexibility and Autonomy",
+        "Build a Community",
+      ],
+      revenue: {
+        total: {
+          title: "Total Revenue",
+          subtitle: "July 1-28",
+          amount: "$120.29",
+          trend: "+12$",
+          progressValue: 50,
+        },
+        lifetime: {
+          title: "Lifetime Revenue",
+          subtitle: "All time",
+          amount: "$1,200.38",
+          trend: "+12$",
+        },
+      },
+      students: {
+        title: "Happy Students",
+        rating: 4.5,
+        reviews: 240,
+        avatars: creatorStudentAvatars,
+        count: "2K+",
+      },
+    },
   },
 };

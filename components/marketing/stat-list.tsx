@@ -2,7 +2,7 @@ import { Stat } from "@/components/shared";
 import { landingPage } from "@/lib/content/marketing/landing-page";
 
 export function StatList() {
-  const { items } = landingPage.stats;
+  const { items } = landingPage.stats.growth;
 
   return (
     <div className="flex flex-wrap gap-x-10 gap-y-8">
