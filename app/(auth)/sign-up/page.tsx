@@ -1,4 +1,4 @@
-import { AuthShell } from "@/components/auth";
+import { AuthShell, SignUpForm } from "@/components/auth";
 import { auth } from "@/lib/content/auth";
 
 export default function SignUpPage() {
@@ -6,6 +6,7 @@ export default function SignUpPage() {
     <AuthShell
       heading={auth.signUp.heading}
       subheading={auth.signUp.subheading}
+      form={<SignUpForm />}
     />
   );
 }

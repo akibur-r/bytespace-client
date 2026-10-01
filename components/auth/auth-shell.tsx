@@ -4,9 +4,11 @@ import { AuthShowcase } from "@/components/auth/auth-showcase";
 export function AuthShell({
   heading,
   subheading,
+  form,
 }: {
   heading: string;
   subheading: string;
+  form?: React.ReactNode;
 }) {
   return (
     <Container className="pb-30">
@@ -20,7 +22,7 @@ export function AuthShell({
           <AuthShowcase />
         </div>
 
-        <div />
+        {form}
       </div>
     </Container>
   );

@@ -8,6 +8,21 @@ export const auth = {
     heading: "Sign up and come in",
     subheading:
       "The registration process is straightforward, uncomplicated, and efficient, allowing users to sign up quickly, easily, and at no cost",
+    form: {
+      subheading: "Create an Account",
+      title: "Welcome to ByteSpace",
+      actionLabel: "Continue",
+      fields: {
+        fullName: { label: "Full Name", placeholder: "Jamie Davis" },
+        email: { label: "Email", placeholder: "designer@example.com" },
+        password: { label: "Password", placeholder: "********" },
+      },
+      prompt: {
+        text: "Already have an account?",
+        linkLabel: "Login",
+        linkHref: "/sign-in",
+      },
+    },
   },
   signIn: {
     heading: "Sign in with ease",
