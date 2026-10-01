@@ -262,6 +262,13 @@
   font-weight: 500;
 }
 
+@utility label-2xs {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
