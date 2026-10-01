@@ -90,6 +90,13 @@ export const landingPage = {
     subheading:
       "At Bytespace, we believe in empowering individuals through knowledge. Our diverse range of courses spans various fields, ensuring there's something for everyone. Unleash your potential and explore our carefully curated categories.",
   },
+  creatorCta: {
+    heading: "Unlock Your Potential as a\n Creator with ByteSpace",
+    description:
+      "Experience the collaboration of numerous creators and an expanding selection of courses. Register now and become a part of a community comprising over 10,000 local and international creators. Utilize our Course Editor, and showcase your expertise by publishing your finest course on the ByteSpace Course Library.",
+    actionLabel: "Join as Creator",
+    actionHref: "/sign-up",
+  },
   stats: {
     growth: {
       title: "Your Path to Professional Growth Starts Here!",

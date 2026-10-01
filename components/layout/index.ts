@@ -1,4 +1,5 @@
 export { Container } from "./container"
+export { GridBackdrop } from "./grid-backdrop"
 export { Masthead } from "./masthead"
 export { HeaderLink, NavLink } from "./nav-link"
 export { PublicShell } from "./public-shell"

@@ -2,6 +2,7 @@ import { Masthead, SiteHeader } from "@/components/layout";
 import {
   CourseCategories,
   Courses,
+  CreatorCta,
   Hero,
   Partners,
   Stats,
@@ -17,6 +18,7 @@ export default function Home() {
       <Courses />
       <CourseCategories />
       <Stats />
+      <CreatorCta />
     </>
   );
 }
