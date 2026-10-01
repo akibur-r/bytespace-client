@@ -25,7 +25,7 @@ export type Testimonial = {
   avatar: StaticImageData;
 };
 
-const creatorStudentAvatars = Array.from({ length: 7 }, () => heroPerson.src);
+const studentAvatars = Array.from({ length: 7 }, () => heroPerson.src);
 
 export const landingPage = {
   hero: {
@@ -48,15 +48,7 @@ export const landingPage = {
         rating: 4.5,
         reviews: 240,
         count: "2K+",
-        avatars: [
-          { src: heroPerson.src },
-          { src: heroPerson.src },
-          { src: heroPerson.src },
-          { src: heroPerson.src },
-          { src: heroPerson.src },
-          { src: heroPerson.src },
-          { src: heroPerson.src },
-        ],
+        avatars: studentAvatars,
       },
     },
   },
@@ -174,7 +166,7 @@ export const landingPage = {
         title: "Happy Students",
         rating: 4.5,
         reviews: 240,
-        avatars: creatorStudentAvatars,
+        avatars: studentAvatars,
         count: "2K+",
       },
     },
