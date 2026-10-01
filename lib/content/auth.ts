@@ -1,7 +1,5 @@
 import { type Course, courses } from "@/lib/content/catalog/courses";
-import socialProofAvatar from "@/components/shared/social-proof-avatar.png";
-
-const avatars = Array.from({ length: 7 }, () => socialProofAvatar.src);
+import { studentAvatars } from "@/lib/content/shared";
 
 export const auth = {
   signUp: {
@@ -44,12 +42,12 @@ export const auth = {
     },
   },
   showcase: {
-    cards: [courses[0], courses[1]] satisfies Course[],
+    cards: [courses[1], courses[2]] satisfies Course[],
     socialProof: {
       title: "Happy Students",
       rating: 4.5,
       reviewCount: 240,
-      avatars,
+      avatars: studentAvatars,
       countLabel: "2K+",
     },
   },
