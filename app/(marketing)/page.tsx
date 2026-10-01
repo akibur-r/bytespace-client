@@ -6,6 +6,7 @@ import {
   Hero,
   Partners,
   Stats,
+  Testimonials,
 } from "@/components/marketing";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <CourseCategories />
       <Stats />
       <CreatorCta />
+      <Testimonials />
     </>
   );
 }
