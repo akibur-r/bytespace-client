@@ -4,15 +4,23 @@ import { Container } from "@/components/layout";
 import { CreatorShowcase } from "@/components/marketing/creator-showcase";
 import { StatList } from "@/components/marketing/stat-list";
 import { StatsShowcase } from "@/components/marketing/stats-showcase";
+import { RadialGlow } from "@/components/shared";
 import { landingPage } from "@/lib/content/marketing/landing-page";
 
 export function Stats() {
   const { growth, creator } = landingPage.stats;
 
   return (
-    <section className="bg-[#fafafa] py-30">
-      <Container>
-        <div className="space-y-18">
+    <section className="bg-[#fafafa] ">
+      <Container className="relative py-30">
+        <div className="pointer-events-none absolute inset-0 text-lime-500">
+          <RadialGlow radius={570} origin="100% 0%" className="absolute inset-0 text-blue-800 opacity-8" />
+          <RadialGlow radius={570} origin="100% 100%" className="absolute inset-0 text-blue-800 opacity-24" />
+          <RadialGlow radius={570} origin="15% 0%" className="absolute inset-0 opacity-40" />
+          <RadialGlow radius={336} origin="0% 85%" className="absolute inset-0 opacity-60" />
+        </div>
+
+        <div className="relative space-y-18">
           <div className="grid grid-cols-2 gap-16">
             <div className="order-2 flex flex-col gap-10 lg:order-1">
               <h2 className="heading-m text-left text-gray-950">
